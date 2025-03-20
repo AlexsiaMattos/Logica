@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Ex2{
+    public static void main(String[] args){
+        float base;
+        float alt;
+        float calc;
+        float calc_per;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("de o valor da base: ");
+        base = input.nextFloat();
+        System.out.println("de o valor da altura: ");
+        alt = input.nextFloat();
+        calc = 2*(base*alt);
+        System.out.println("a área é: " + calc +"m2");
+        calc_per = 2*(base+alt);
+        System.out.println("o perímetro é: " + calc_per + "m2");
+
+
+    }
+}
