@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Ex3{
+    public static void main(String[] args){
+       Scanner input = new Scanner(System.in);
+       int entrada;
+
+       System.out.println("Escreva um número: ");
+       entrada = input.nextInt();
+
+       if(entrada<0){
+        System.out.println("é negativo");
+       } 
+       else if (entrada == 0){
+        System.out.println("número neutro");
+        
+       }
+        else{
+        System.out.println("é positivo");
+        }
+    }
+}
