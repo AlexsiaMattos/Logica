@@ -6,8 +6,8 @@ public class Ex6{
         int meses;
         int dias;
         Scanner input  = new Scanner(System.in);
-        int a_em_dias;
-        int m_em_dias;
+        int anosEmDias;
+        int mesesEmDias;
         int total;
 
 
@@ -19,10 +19,10 @@ public class Ex6{
         System.out.println("diga sua idade em dias: ");
         dias = input.nextInt();
 
-        a_em_dias = anos * 365;
-        m_em_dias = meses *30;
+        anosEmDias = anos * 365;
+        mesesEmDias = meses *30;
 
-        total = a_em_dias + m_em_dias + dias;
+        total = anosEmDias + mesesEmDias + dias;
 
         System.out.println("vocẽ já viveu: " + total + " dias");
 
