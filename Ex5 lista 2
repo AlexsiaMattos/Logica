@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Ex5{
+    public static void main(String[] args){
+        float v1 , v2;
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("de um valor para v1: ");
+        v1 = input.nextFloat();
+        System.out.println("de um valor para v2: ");
+        v2 = input.nextFloat();
+
+        if((v1%v2)!= 0){
+            System.out.println("o resultado é: " + v1%v2);
+        }
+        else{
+            System.out.println("erro, resto é zero " + v1%v2);
+
+        }    
+    }
+    
+}
