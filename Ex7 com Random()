@@ -1,0 +1,49 @@
+//faça um programa que peça para o usuario escolher um numero de 0 a 10 e compare com um numero sorteado, 
+//caso o usuario erre, de a chance dele tentar novamente até 3 vezes; IF e else irão rolar. 
+
+import java.util.Scanner;
+import java.util.Random;
+
+public class Ex7{
+    public static void main(String[] args){
+        //int meuNumero;
+        int usNumero;
+        Scanner input =  new Scanner(System.in);
+        Random aleatorio = new Random();
+        int meuNumero;
+        
+
+        System.out.println(" Digite um número: ");
+        usNumero = input.nextInt();
+        meuNumero = aleatorio.nextInt(11);
+        
+        if(usNumero == meuNumero){
+            System.out.println("VOCE ACERTOU!");
+
+        }
+        else{
+            System.out.println("ERROU TENTE NOVAMENTE! VOCE MAIS DUAS CHANCES");
+
+        }
+
+            usNumero = input.nextInt();
+            if(usNumero == meuNumero){
+                System.out.println("VOCE ACERTOU!");
+
+            }
+            else{
+                System.out.println("ERROU TENTE NOVAMENTE! VOCE MAIS UMA CHANCE");
+
+
+            }   
+            usNumero = input.nextInt();
+            if(usNumero == meuNumero){
+                System.out.println("VOCE ACERTOU!");
+
+            }   
+            else{
+                System.out.println("ERROU, VOCÊ NÃO TEM MAIS CHANCES! O ESOLHIDO ERA: " + meuNumero);
+            }
+
+    }
+}
