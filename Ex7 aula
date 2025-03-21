@@ -1,0 +1,6 @@
+if(usNumero == meuNumero){
+            System.out.println("VOCE ACERTOU!");
+
+        }
+        else{
+            System.out.println("ERROU TENTE NOVAMENTE! VOCE MAIS UMA CHANCE");
