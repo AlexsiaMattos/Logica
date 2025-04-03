@@ -18,7 +18,7 @@ public class MediaDez {
         //CONTE QUANTAS TENTATIVAS FORAM USADAS
         //DE UMA DICA (MAIOR/MENOR)
         //INCLUA UM SISTEMA DE 3 TENTATIVAS APENAS
-            while(numero!=aleatorio && tentativa<=3){
+            while(numero!=aleatorio && tentativa<=2){
                 System.out.println("ERROU! INFORME UM NOVO NUMERO:");   
                 numero = input.nextInt();
                 
