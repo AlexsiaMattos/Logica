@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class MediaDez {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int contador = 0;
+        float valor;
+        float soma=0;
+        float media; 
+
+
+
+        while(contador <10){
+            System.out.println("CONTADOR " + contador);
+            
+            valor = input.nextFloat();
+            soma = soma+valor;
+            contador ++;
+            
+
+
+        }
+
+        media = soma/10;
+        System.out.println("SUA MEDIA FOI: "+ media);
+      
+    
+        
+    }
+}
