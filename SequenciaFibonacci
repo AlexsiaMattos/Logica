@@ -1,0 +1,34 @@
+
+
+public class Fibonnaci {
+    public static void main(String[] args) {
+       
+        int soma = 1;
+        int soma2 = 1;
+        int soma3;
+        int fib;
+        int contador =1 ;
+        int anterior = 1;
+        int anterior2 = 1;
+
+        int atual; 
+        int atual2;
+       
+
+       // soma3 = soma1 +soma2;
+        //soma1 = soma2 + soma3;
+        //soam2 = soma3 + soma1;
+        while(contador<20 ){
+            atual  = anterior + anterior2;
+            System.out.println("ATUAL É: " + atual);
+            anterior = anterior2;
+            anterior2 = atual;
+            
+
+            
+            
+            contador++;
+
+        }
+    }
+}
