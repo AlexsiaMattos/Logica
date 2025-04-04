@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Divisores {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int numero;
+        int divisor = 1;
+        System.out.println("DIGITE UM NUMERO: ");
+
+        numero = input.nextInt();
+        while (divisor <= numero){
+            if (numero % divisor == 0){
+                System.out.println(divisor + " É DIVISOR!");
+
+            }
+            divisor ++; 
+        }
+        
+    }
+}
