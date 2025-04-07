@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class Ex4{
+    public static void main(String[] args) {
+       String nome;
+       float sal;
+       int pontAnual;
+       Scanner input = new Scanner(System.in);
+       float salFinal;
+
+
+       System.out.println("DIGITE SEU NOME: ");
+       nome = input.nextLine();
+       System.out.println("DIGITE QUAL O SALARIO QUE RECEBE: ");
+       sal =  input.nextFloat();
+       System.out.println("DIGITE A SUA PONTUAÇAO ANUAL: ");
+       pontAnual = input.nextInt();
+
+       if (pontAnual >= 90  && pontAnual <= 100){
+        System.out.println("EXCELENTE DESEMPENHO! BONNIFICAÇÃO DE 20%");
+        salFinal = sal * 1.20f;
+        System.out.println(nome+ " SEU SALARIO FINAL SERA: " + salFinal);
+
+       }else if (pontAnual >= 70 && pontAnual <= 89){
+            System.out.println("BOM DESEMPENHO! BONNIFICAÇÃO DE 10%");
+            salFinal = sal * 1.10f;
+            System.out.println(nome+ " SEU SALARIO FINAL SERA: " + salFinal);
+       }else if (pontAnual >= 50 && pontAnual <= 69){
+            System.out.println(" DESEMPENHO MEDIO! BONNIFICAÇÃO DE 5%");
+            salFinal = sal * 1.05f;
+            System.out.println(nome +" SEU SALARIO FINAL SERA: " + salFinal);
+       }else if (pontAnual< 50){
+            System.out.println( " DESEMPENHO ABAIXO DO ESPERADO! BONNIFICAÇÃO DE 0%");
+            salFinal = sal;
+            System.out.println(nome+" SEU SALARIO FINAL SERA: " + salFinal);
+       }
+
+    }   
+}
