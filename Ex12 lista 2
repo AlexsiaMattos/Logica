@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Ex12 {
+    public static void main(String[] args) {
+        int quantidade;
+        float valor;
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("DIGITE QUANTAS MAÇAS VOCE DESEJA: ");
+        quantidade = input.nextInt();
+
+        if(quantidade < 12){
+            valor = quantidade * 1.50f;
+            System.out.println("VALOR FINAL DA SUA COMPRA: " + valor);
+
+        }else if(quantidade >= 12){
+            valor = quantidade * 1.30f;
+            System.out.println("VALOR FINAL DA SUA COMPRA: "+ valor);
+
+        }
+    
+       else{
+        System.out.println("QUANTIDADE DE PRODUTOS INSUFICIENTES");
+      }
+    }
+}
