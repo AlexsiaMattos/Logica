@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Ex10{
+    public static void main(String[] args) {
+        int idade;
+        String nome;
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("DIGITE QUAL SEU NOME: ");
+        nome = input.nextLine();
+        System.out.println("DIGITE QUAL A SUA IDADE: ");
+        idade = input.nextInt();
+
+
+        if (idade >= 18){
+            System.out.println(nome +", VOCE FOI CLASSIFICADO NA CATEGORIA: ADULTO");
+
+        } else if (idade>= 14 && idade<18){
+            System.out.println(nome + ", VCE FOI CLASSIFICADO NA CATEGORIA: JUVENIL");
+
+        }else if (idade>9 && idade <14){
+            System.out.println(nome+ ", VOCE FOI CLASSIFICADO NA CATEGORIA: INFANTIL");
+
+        }else if(idade<9){
+            System.out.println(nome+ ", VOCE FOI CLASSIFICADO NA CATEGORIA: MIRIM");
+        }
+
+    } 
+}
