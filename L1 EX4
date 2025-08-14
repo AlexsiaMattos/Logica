@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class lista1ex4 {
+    public static void main(String[] args){
+        int base;
+        int alt;
+        Scanner scanner = new Scanner(System.in);
+        int cl;
+
+        System.out.println("digite a base do triangulo:");
+        base = scanner.nextInt();
+        System.out.println("digite a altura do triangulo: ");
+        alt = scanner.nextInt();
+        cl = (base*alt)/2;
+        System.out.println("resultado da area: " + cl);
+
+
+
+    }
+    
+}
