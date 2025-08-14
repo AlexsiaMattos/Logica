@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class lista1ex2 {
+    public static void main(String[] args){
+        float n;
+        Scanner scanner = new Scanner(System.in);
+        float calc;
+
+        System.out.println("digite um numero: ");
+        n = scanner.nextFloat();
+        calc = n * 1.20f;
+        System.out.println("resultado: " + calc);
+
+
+    } 
+    
+}
