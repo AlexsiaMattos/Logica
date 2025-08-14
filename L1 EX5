@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public  class l1ex5{
+    public static void main(String[] args){
+        float tcelcius;
+        float clc;
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("digite a temperatura em celcius: " );
+        tcelcius = scanner.nextFloat();
+        clc = (tcelcius +32 *9) /5;
+        System.out.println("a temperatura em farenheit é: " + clc);
+
+    }
+
+}
