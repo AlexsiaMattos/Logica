@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class lista1ex1 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n;
+        int calc;
+
+        System.out.println("digite um numero:");
+        n = scanner.nextInt();
+        calc = n -1;
+        System.out.println("o resultado é: " + calc);
+
+        
+
+
+    }
+}
