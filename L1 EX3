@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class lista1ex3 {
+    public static void main(String[] args){
+        int n;
+        Scanner scanner = new Scanner(System.in);
+        int cl;
+
+        System.out.println("número: ");
+        n = scanner.nextInt();
+        cl = n * n;
+        System.out.println("número: "+ cl);
+
+
+    }
+    
+}
