@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class l1ex7 {
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        float dist;
+        float vel;
+        float temp;
+
+        System.out.println("qual foi a distância percorrida:");
+        dist = scanner.nextFloat();
+        System.out.println("qual foi a velocidade de percurso: ");
+        vel = scanner.nextFloat();
+        temp =  dist / vel;
+        System.out.println("o tempo de viagem foi: "+ temp);
+
+    }
+}
