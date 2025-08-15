@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class l1ex6 {
+    public static void main(String[] args){
+        float n1;
+        float n2;
+        float med;
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("digite qual foi sua primeira nota: ");
+        n1 = scanner.nextFloat();
+        System.out.println("digite qual foi sua segunda nota: ");
+        n2 = scanner.nextFloat();
+        med = (n1 + n2) /2;
+        System.out.println("sua média foi: " + med);
+        
+    }
+    
+}
