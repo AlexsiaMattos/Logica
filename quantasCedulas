@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Cedulas{
+    public static void main(String[] args){
+        int notCin = 50;
+        int notD = 10;
+        int val;
+        int clcCin;
+        int clcD;
+        int clc;
+
+
+
+        Scanner scn = new Scanner(System.in);
+
+        val = scn.nextInt();
+        clcCin = val / notCin;
+        clc = val- (clcCin*50);
+        System.out.println(clcCin + " notas de 50");
+        clcD = clc/notD;
+        System.out.println(clcD + " notas de 10");
+
+        
+
+
+
+
+
+    }
+}
