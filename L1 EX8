@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Ex8l1 {
+    public static void main(String[] args) {
+        float tEleitores, vVal, vBran, vNul;
+        float pctVal, pctBran, pctNul;
+        Scanner scn = new Scanner(System.in);
+
+        System.out.println("digite: numero de eleitores: \n numero votos validos: \n numero de votos brancos: \n numero de votos nulos:");
+        tEleitores = scn.nextFloat();
+        vVal = scn.nextFloat();
+        vBran = scn.nextFloat();
+        vNul = scn.nextFloat();
+
+        pctVal = (vVal * 100)/ tEleitores;
+        pctBran = (vBran  * 100)/ tEleitores;
+        pctNul = (vNul *100)/tEleitores;
+
+        System.out.println("a porcentagem de votos válidos: " + pctVal+"%");
+        System.out.println("a porcentagem de votos brancos: " + pctBran+"%");
+        System.out.println("a porcentagem de votos nulos: " + pctNul+"%");
+
+
+
+
+    }
+    
+}
